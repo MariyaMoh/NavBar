@@ -22,6 +22,17 @@ const SidebarLink = styled(Link)`
     width: 15rem;
     height: 2.7rem;
   }
+  @media screen and (max-width: 600px) {
+    font-size: 0.8rem;
+    height: 1.5rem;
+    // background: red;
+    width: 8rem;
+
+    &:hover {
+      width: 8rem;
+      height: 1.5rem;
+    }
+  }
 `;
 const DropdownLink = styled(Link)`
   height: 3rem;
@@ -31,13 +42,23 @@ const DropdownLink = styled(Link)`
   align-items: center;
   text-decoration: none;
   color: #000000;
-  font-size: 18px;
+  // font-size: 18px;
   &:hover {
     border-style: solid;
     border-color: #00a759;
     cursor: pointer;
     background: #e3e3e3;
     width: 15rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 0.8rem;
+
+    height: 1.5rem;
+    &:hover {
+      width: 8rem;
+      height: 1.5rem;
+    }
   }
 `;
 

@@ -21,6 +21,9 @@ const SidebarLink = styled(Link)`
     width: 15rem;
     height: 2.7rem;
   }
+
+  @media screen and (max-width: 600px) {
+  }
 `;
 const DropdownLink = styled(Link)`
   height: 3rem;
@@ -43,7 +46,7 @@ const DropdownLink = styled(Link)`
 `;
 
 const SidebarLabel = styled.span`
-  margin-left: 16px;
+  // margin-left: 16px;
 `;
 const SubMenu = ({ item }) => {
   const [subnav, setSubNav] = useState(false);

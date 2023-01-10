@@ -14,6 +14,13 @@ const SidebarWarp = styled.nav`
   display: flex;
   flex-direction: column;
   font-family: arial, verdana, san-serif;
+
+  @media screen and (max-width: 600px) {
+    padding-top: 0;
+    gap: 0.1rem;
+    // background: red;
+    padding-left: 0;
+  }
 `;
 
 export const FixedNav = () => (
